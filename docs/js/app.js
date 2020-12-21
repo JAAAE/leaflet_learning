@@ -34,14 +34,14 @@ const map = L.map('map', {
 
 //BaseLayer
 const Map_BaseLayer = {
-    "臺灣土地利用及林型圖_1956": Landuse_1956
+    "1956": Landuse_1956
     
 };
 
 //AddLayer
 const Map_AddLayer = {
-    "1904日治臺灣堡圖(明治版)": JM20K_1904,
-    "1921日治臺灣堡圖(大正版)": JM25K_1921,
+    "1904": JM20K_1904,
+    "1921": JM25K_1921,
     "GSI Ort": t_ort
 };
 
