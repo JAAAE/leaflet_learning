@@ -9,39 +9,39 @@ const m_mono = new L.tileLayer("https://tile.mierune.co.jp/mierune_mono/{z}/{x}/
     attribution: "Maptiles by <a href='http://mierune.co.jp/' target='_blank'>MIERUNE</a>, under CC BY. Data by <a href='http://osm.org/copyright' target='_blank'>OpenStreetMap</a> contributors, under ODbL."
 });
 
-//1956_Landuse(台灣百年歷史地圖)
-const Landuse_1956 = new L.tileLayer('https://gis.sinica.edu.tw/tileserver/file-exists.php?img=1956_Landuse-png-{z}-{x}-{y}', {
-    attribution: ' <a href="https://gis.sinica.edu.tw/tileserver/">台灣百年歷史地圖</a> contributors'
+//OSM
+const o_std = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 });
 
-//1904-日治臺灣堡圖(明治版)(台灣百年歷史地圖)
-const JM20K_1904 = new L.tileLayer('https://gis.sinica.edu.tw/tileserver/file-exists.php?img=JM20K_1904-jpg-{z}-{x}-{y}', {
-    attribution: '<a href="https://gis.sinica.edu.tw/tileserver/">台灣百年歷史地圖</a> contributors',
+//GSI Pale
+const t_pale = new L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png', {
+    attribution: "<a href='http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html' target='_blank'>国土地理院</a>",
 });
 
-//1921-日治地形圖-1:25,000(台灣百年歷史地圖)
-const JM25K_1921 = new L.tileLayer('https://gis.sinica.edu.tw/tileserver/file-exists.php?img=JM25K_1921-png-{TileMatrix}-{z}-{x}-{y}}', {
+//GSI Ort
+const t_ort = new L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg', {
     attribution: "<a href='http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html' target='_blank'>国土地理院</a>",
 });
 
 //MAP
 const map = L.map('map', {
-    center: [23.7, 121],
-    zoom: 7,
+    center: [35.6831925, 139.7511307],
+    zoom: 13,
     zoomControl: true,
-    layers: [JM20K_1904]
+    layers: [m_mono]
 });
 
 //BaseLayer
 const Map_BaseLayer = {
-    "1956": Landuse_1956
-    
+    "MIERUNE Color": m_color,
+    "MIERUNE MONO": m_mono
 };
 
 //AddLayer
 const Map_AddLayer = {
-    "1904": JM20K_1904,
-    "1921": JM25K_1921,
+    "OSM": o_std,
+    "GSI Pale": t_pale,
     "GSI Ort": t_ort
 };
 
