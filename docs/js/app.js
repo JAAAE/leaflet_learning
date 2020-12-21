@@ -29,7 +29,7 @@ const map = L.map('map', {
     center: [23.7, 121],
     zoom: 7,
     zoomControl: true,
-    layers: Landuse_1956
+    layers: JM20K_1904
 });
 
 //BaseLayer
