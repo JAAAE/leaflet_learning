@@ -26,7 +26,7 @@ const t_ort = new L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/
 
 //MAP
 const map = L.map('map', {
-    center: [35.6831925, 139.7511307],
+    center: [23.7], 139.121],
     zoom: 13,
     zoomControl: true,
     layers: [m_mono]
