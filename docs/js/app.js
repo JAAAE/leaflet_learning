@@ -15,7 +15,7 @@ const o_std = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.pn
 });
 
 //GSI Pale
-const Landuse1956 = new L.tileLayer('https://gis.sinica.edu.tw/tileserver/file-exists.php?img=1956_Landuse-png-{z}-{x}-{y}', {
+const t_pale = new L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png', {
     attribution: "<a href='http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html' target='_blank'>国土地理院</a>",
 });
 
@@ -26,7 +26,7 @@ const t_ort = new L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/
 
 //MAP
 const map = L.map('map', {
-    center: [23.7], 139.121],
+    center: [35.6831925, 139.7511307],
     zoom: 13,
     zoomControl: true,
     layers: [m_mono]
@@ -41,7 +41,7 @@ const Map_BaseLayer = {
 //AddLayer
 const Map_AddLayer = {
     "OSM": o_std,
-    "Landuse": Landuse1956,
+    "GSI Pale": t_pale,
     "GSI Ort": t_ort
 };
 
