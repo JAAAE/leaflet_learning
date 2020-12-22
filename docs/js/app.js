@@ -15,7 +15,7 @@ const o_std = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.pn
 });
 
 //GSI Pale
-const t_pale = new L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png', {
+const t_pale = new L.tileLayer('https://gis.sinica.edu.tw/tileserver/file-exists.php?img=JM20K_1904-jpg-{TileMatrix}-{TileCol}-{TileRow}', {
     attribution: "<a href='http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html' target='_blank'>国土地理院</a>",
 });
 
@@ -27,7 +27,7 @@ const t_ort = new L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/
 //MAP
 const map = L.map('map', {
     center: [23.7, 121],
-    zoom: 13,
+    zoom: 7,
     zoomControl: true,
     layers: [m_mono]
 });
