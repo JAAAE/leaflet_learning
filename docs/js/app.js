@@ -66,6 +66,6 @@ L.control.opacity(
 L.control.scale({
     metric: true,
     imperial: false,
-    position: 'topright'
+    position: 'topleft'
 }).addTo(map);
 
