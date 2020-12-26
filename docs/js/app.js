@@ -19,9 +19,9 @@ const S_20 = new L.tileLayer('https://landslide.geologycloud.tw/jlwmts/jetlink/S
     attribution: "<a href='http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html' target='_blank'>国土地理院</a>",
 });
 
-//GSI Ort
-const t_ort = new L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort/{z}/{x}/{y}.jpg', {
-    attribution: "<a href='http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html' target='_blank'>国土地理院</a>",
+//1904-日治臺灣堡圖(明治版)-1:20,000
+const JM20K_1904 = new L.tileLayer('https://gis.sinica.edu.tw/tileserver/file-exists.php?img=JM20K_1904-jpg-{TileMatrix}-{TileCol}-{TileRow}', {
+    attribution: "<a href='http://gissrv4.sinica.edu.tw/gis/twhgis/' target='_blank'>中央研究院</a>",
 });
 
 //MAP
@@ -42,7 +42,7 @@ const Map_BaseLayer = {
 const Map_AddLayer = {
     "OSM": o_std,
     "Shadow_20": S_20,
-    "GSI Ort": t_ort
+    "1904台灣堡圖(明治)": JM20K_1904
 };
 
 //LayerControl
