@@ -62,7 +62,7 @@ L.control.opacity(
     }
 ).addTo(map);
 
-//scale
+//add Scale
 L.control.scale({
     metric: true,
     imperial: false,
