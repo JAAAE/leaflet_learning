@@ -71,12 +71,5 @@ L.control.scale({
 
 
 
-map.addControl(L.control.locate({
-    locateOptions: {
-        enableHighAccuracy: true //说是精准定位，但其实我觉得没差
-    },
-    strings: {
-        title: "Show me where I am, yo!"
-    }
-}));
+
 
