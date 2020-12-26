@@ -20,7 +20,7 @@ const S_20 = new L.tileLayer('https://landslide.geologycloud.tw/jlwmts/jetlink/S
 });
 
 //1904-日治臺灣堡圖(明治版)-1:20,000
-const JM20K_1904 = new L.tileLayer('https://gis.sinica.edu.tw/tileserver/file-exists.php?img=JM20K_1904-jpg-{TileMatrix}-{TileCol}-{TileRow}', {
+const JM20K_1904 = new L.tileLayer('https://gis.sinica.edu.tw/tileserver/file-exists.php?img=JM20K_1904-jpg-{z}-{x}-{y}', {
     attribution: "<a href='http://gissrv4.sinica.edu.tw/gis/twhgis/' target='_blank'>中央研究院</a>",
 });
 
