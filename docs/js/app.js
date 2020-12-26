@@ -14,8 +14,8 @@ const o_std = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.pn
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 });
 
-//GSI Pale
-const t_pale = new L.tileLayer('https://landslide.geologycloud.tw/jlwmts/jetlink/Shadw20/GoogleMapsCompatible/{z}/{x}/{y}', {
+//Shadw20
+const Shadw20 = new L.tileLayer('https://landslide.geologycloud.tw/jlwmts/jetlink/Shadw20/GoogleMapsCompatible/{z}/{x}/{y}', {
     attribution: "<a href='http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html' target='_blank'>国土地理院</a>",
 });
 
@@ -41,7 +41,7 @@ const Map_BaseLayer = {
 //AddLayer
 const Map_AddLayer = {
     "OSM": o_std,
-    "GSI Pale": t_pale,
+    "Shadw20": Shadw20,
     "GSI Ort": t_ort
 };
 
