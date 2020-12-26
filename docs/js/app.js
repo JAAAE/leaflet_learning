@@ -15,7 +15,7 @@ const o_std = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.pn
 });
 
 //Shadw20
-const Shadw20 = new L.tileLayer('https://landslide.geologycloud.tw/jlwmts/jetlink/Shadw20/GoogleMapsCompatible/{z}/{x}/{y}', {
+const Shadw_20 = new L.tileLayer('https://landslide.geologycloud.tw/jlwmts/jetlink/Shadw20/GoogleMapsCompatible/{z}/{x}/{y}', {
     attribution: "<a href='http://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html' target='_blank'>国土地理院</a>",
 });
 
