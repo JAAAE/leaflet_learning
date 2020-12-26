@@ -69,10 +69,6 @@ L.control.scale({
     position: 'bottomleft'
 }).addTo(map);
 
-L.mapbox.accessToken = '<your access token here>';
-    var map = L.mapbox.map('map')
-      .setView([0, 0], 4)
-      .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
+L.control.locate().addTo(map);
 
-    L.control.locate().addTo(map);
 
