@@ -41,7 +41,7 @@ const Map_BaseLayer = {
 //AddLayer
 const Map_AddLayer = {
     "OSM": o_std,
-    "Shadw20": Shadw20,
+    "Shadw_20": Shadw20,
     "GSI Ort": t_ort
 };
 
