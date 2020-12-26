@@ -69,6 +69,6 @@ L.control.scale({
     position: 'bottomleft'
 }).addTo(map);
 
-L.control.locate().addTo(map);
+
 
 
