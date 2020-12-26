@@ -69,3 +69,9 @@ L.control.scale({
     position: 'bottomleft'
 }).addTo(map);
 
+navigator.geolocation.getCurrentPosition(function(location) {
+    var latlng = new L.LatLng(location.coords.latitude, location.coords.longitude);
+
+    var marker = L.marker(latlng).addTo(map);
+});
+
