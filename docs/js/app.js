@@ -69,9 +69,10 @@ L.control.scale({
     position: 'bottomleft'
 }).addTo(map);
 
-navigator.geolocation.getCurrentPosition(function(location) {
-    var latlng = new L.LatLng(location.coords.latitude, location.coords.longitude);
+L.mapbox.accessToken = '<your access token here>';
+    var map = L.mapbox.map('map')
+      .setView([0, 0], 4)
+      .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
 
-    var marker = L.marker(latlng).addTo(map);
-});
+    L.control.locate().addTo(map);
 
