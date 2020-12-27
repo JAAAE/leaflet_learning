@@ -76,4 +76,4 @@ L.Control.geocoder({
     placeholder: 'Search...',
     defaultMarkGeocode: true
     
-      }).addTo(map)   
+      }).addTo(map);   
