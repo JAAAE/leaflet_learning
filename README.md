@@ -1,4 +1,4 @@
-## Leaflet_studying主要學習內容：
+## Leaflet_studying學習內容：
 
 1. leaflet_opacity
 
