@@ -1,15 +1,4 @@
 
-
-
-// add Geocoder
-L.Control.geocoder({
-    position: 'topleft',
-    collapsed: false,
-    placeholder: 'Search...',
-    defaultMarkGeocode: true
-    
-      }).addTo(map);   
-      
 //MIERUNE Color
 const m_color = new L.tileLayer("https://tile.mierune.co.jp/mierune/{z}/{x}/{y}.png", {
     attribution: "Maptiles by <a href='http://mierune.co.jp/' target='_blank'>MIERUNE</a>, under CC BY. Data by <a href='http://osm.org/copyright' target='_blank'>OpenStreetMap</a> contributors, under ODbL."
@@ -80,3 +69,11 @@ L.control.scale({
     position: 'bottomleft'
 }).addTo(map);
 
+// add Geocoder
+L.Control.geocoder({
+    position: 'topleft',
+    collapsed: false,
+    placeholder: 'Search...',
+    defaultMarkGeocode: true
+    
+      }).addTo(map);   
