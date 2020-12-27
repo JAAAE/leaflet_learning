@@ -4,7 +4,8 @@
 
 2. leaflet_scale
 
+## Demo
+https://jaaae.github.io/leaflet_studying/
 
-+ Site:https://jaaae.github.io/leaflet_studying/
-
-+ Reference:https://github.com/dayjournal/Leaflet.Control.Opacity
+## Reference website
+https://github.com/dayjournal/Leaflet.Control.Opacity
