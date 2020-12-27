@@ -1,6 +1,13 @@
-# Leaflet_studying
-<h3>主要學習內容：</h3>
-<p>1. leaflet_opacity</p>
-<p>2. leaflet_scale</p>
+## Leaflet_studying主要學習內容：
 
-<p>https://jaaae.github.io/leaflet_studying/</p>
+1. leaflet_opacity
+
+2. leaflet_scale
+
+## Demo
+https://jaaae.github.io/leaflet_studying/
+
+## Reference website
+https://github.com/dayjournal/Leaflet.Control.Opacity (Opacity)
+
+https://www.youtube.com/watch?v=SfBkBBM4U8U (Scale_youtube)
