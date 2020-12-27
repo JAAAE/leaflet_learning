@@ -28,7 +28,7 @@ const JM20K_1904 = new L.tileLayer('https://gis.sinica.edu.tw/tileserver/file-ex
 const map = L.map('map', {
     center: [23.7, 121],
     zoom: 7,
-    zoomControl: true,
+    zoomControl: false,
     layers: [m_mono]
 });
 
@@ -75,16 +75,11 @@ L.Control.geocoder({
     collapsed: false,
     placeholder: 'Search...',
     defaultMarkGeocode: true
-    
       }).addTo(map);   
 
-
-      var map = L.map('map', {
-        maxZoom: 20,
-        minZoom: 6,
-        zoomControl: false
-    });
-    
-    L.control.zoom({
-        position: 'bottomright'
+L.control.zoom({
+    position: 'bottomright'
     }).addTo(map);
+
+
+      
