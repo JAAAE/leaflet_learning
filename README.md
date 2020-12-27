@@ -12,6 +12,6 @@ https://jaaae.github.io/leaflet_studying/
 
 (Scale_youtube) https://www.youtube.com/watch?v=SfBkBBM4U8U 
 
-(Geocoding_layout design) https://gis.stackexchange.com/questions/325945/search-control-on-leaflet
+(Geocoder_layout design) https://gis.stackexchange.com/questions/325945/search-control-on-leaflet
 
 (leaflet-control-geocoder) https://github.com/perliedman/leaflet-control-geocoder
