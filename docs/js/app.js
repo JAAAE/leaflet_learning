@@ -78,6 +78,5 @@ L.Control.geocoder({
     
       }).addTo(map);   
 
-var map = new L.map("map-container",{ zoomControl: false });
 
-L.control.zoom({ position: 'topright' }).addTo(map);
+L.control.zoom({ position: 'bottomright' }).addTo(map);
