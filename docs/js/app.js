@@ -80,4 +80,4 @@ L.Control.geocoder({
         country: 'us'
       }
     })
-  }).addTo(map)
+  }).addTo(map);
