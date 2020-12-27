@@ -71,5 +71,7 @@ L.control.scale({
 
 
 
-
+var geocoder = L.Control.geocoder({
+  defaultMarkGeocode: true
+}).addTo(map);
 
