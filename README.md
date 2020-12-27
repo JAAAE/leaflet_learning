@@ -7,7 +7,7 @@
 ## Demo
 https://jaaae.github.io/leaflet_studying/
 
-## Reference website
+## Reference 
 (Opacity) https://github.com/dayjournal/Leaflet.Control.Opacity 
 
 (Scale_youtube) https://www.youtube.com/watch?v=SfBkBBM4U8U 
