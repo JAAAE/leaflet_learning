@@ -17,3 +17,5 @@ https://jaaae.github.io/leaflet_studying/
 (Geocoder_layout design) https://gis.stackexchange.com/questions/325945/search-control-on-leaflet
 
 (leaflet-control-geocoder) https://github.com/perliedman/leaflet-control-geocoder
+
+(moving zoom control to desire position) https://stackoverflow.com/questions/33614912/how-to-locate-leaflet-zoom-control-in-a-desired-position
