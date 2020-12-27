@@ -4,6 +4,8 @@
 
 2. leaflet_scale
 
+3. Geocoding
+
 ## Demo
 https://jaaae.github.io/leaflet_studying/
 
