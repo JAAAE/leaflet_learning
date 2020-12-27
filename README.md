@@ -4,7 +4,7 @@
 1. leaflet_opacity
 
 2. leaflet_scale
-<br>
+---
 
 Site:https://jaaae.github.io/leaflet_studying/
 
