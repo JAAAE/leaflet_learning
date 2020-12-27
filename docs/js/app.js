@@ -70,14 +70,4 @@ L.control.scale({
 }).addTo(map);
 
 // add Geocoder
-L.Control.geocoder({
-    position: 'topright',
-    collapsed: false,
-    placeholder: 'Search...',
-    defaultMarkGeocode: true,
-    geocoder: L.Control.Geocoder.mapbox('pk.eyJ1IjoiYTM1NDc5NCIsImEiOiJja2o2cHBoaG8yMHZsMnNsZ3RsODcxMDVyIn0.MnX9iTESuuyuDmEUm87AVA', {
-      geocodingQueryParams: {
-        country: 'us'
-      }
-    })
-  });
+L.Control.geocoder().addTo(map);
