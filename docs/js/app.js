@@ -71,7 +71,7 @@ L.control.scale({
 
 // add Geocoder
 L.Control.geocoder({
-    position: 'topleft',
+    position: 'topright',
     collapsed: false,
     placeholder: 'Search...',
     defaultMarkGeocode: true,
