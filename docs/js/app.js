@@ -75,9 +75,6 @@ L.Control.geocoder({
     collapsed: false,
     placeholder: 'Search...',
     defaultMarkGeocode: true,
-    geocoder: L.Control.Geocoder.mapbox('pk.eyJ1IjoiYTM1NDc5NCIsImEiOiJja2o2MDc2eHMxMXV4MnJwNmI0dXpzMzlmIn0.Kp524tJPKuk0Te9CB4xfvQ', {
-      geocodingQueryParams: {
-        country: ''
-      }
-    })
+    geocoder: L.Control.Geocoder.mapbox('pk.eyJ1IjoiYTM1NDc5NCIsImEiOiJja2o2MDc2eHMxMXV4MnJwNmI0dXpzMzlmIn0.Kp524tJPKuk0Te9CB4xfvQ' 
+    )
   });
