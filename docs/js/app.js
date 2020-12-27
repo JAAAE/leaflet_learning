@@ -69,7 +69,7 @@ L.control.scale({
     position: 'bottomleft'
 }).addTo(map);
 
-
+// add Geocoder
 L.Control.geocoder({
     position: 'topright',
     collapsed: false,
@@ -77,7 +77,7 @@ L.Control.geocoder({
     defaultMarkGeocode: true,
     geocoder: L.Control.Geocoder.mapbox('pk.eyJ1IjoiYTM1NDc5NCIsImEiOiJja2o2MDc2eHMxMXV4MnJwNmI0dXpzMzlmIn0.Kp524tJPKuk0Te9CB4xfvQ', {
       geocodingQueryParams: {
-        country: 'us'
+        country: 'Taiwan'
       }
     })
   });
