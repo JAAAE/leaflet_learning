@@ -77,3 +77,7 @@ L.Control.geocoder({
     defaultMarkGeocode: true
     
       }).addTo(map);   
+
+var map = new L.map("map-container",{ zoomControl: false });
+
+L.control.zoom({ position: 'topright' }).addTo(map);
