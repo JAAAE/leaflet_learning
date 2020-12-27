@@ -79,4 +79,12 @@ L.Control.geocoder({
       }).addTo(map);   
 
 
-L.control.zoom({ position: 'bottomright' }).addTo(map);
+      var map = L.map('map', {
+        maxZoom: 20,
+        minZoom: 6,
+        zoomControl: false
+    });
+    
+    L.control.zoom({
+        position: 'bottomright'
+    }).addTo(map);
