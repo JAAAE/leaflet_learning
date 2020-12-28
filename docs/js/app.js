@@ -27,7 +27,7 @@ const JM20K_1904 = new L.tileLayer('https://gis.sinica.edu.tw/tileserver/file-ex
 //MAP
 const map = L.map('map', {
     center: [23.7, 121],
-    zoom: 7,
+    zoom: 9,
     zoomControl: false, //false -> remove default zoom control
     layers: [Orthophoto]
 });
