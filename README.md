@@ -1,14 +1,14 @@
 ## Leaflet_studying學習內容：
 
-1. <b>leaflet_opacity<b>
+1. leaflet_opacity
 
-2. <b>leaflet_scale<b>
+2. leaflet_scale
 
-3. <b>Geocoding<b>
+3. Geocoding
 
-4. <b>zoom control position<b>
+4. zoom control position
 
-5. <b>add geojson<b>
+5. add geojson
 
 ## Demo
 https://jaaae.github.io/leaflet_studying/
