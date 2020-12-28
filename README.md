@@ -14,7 +14,7 @@
 https://jaaae.github.io/leaflet_studying/
 
 ## Reference 
-+ <em>Opacity<em>: https://github.com/dayjournal/Leaflet.Control.Opacity 
++ <em>Opacity</em>: https://github.com/dayjournal/Leaflet.Control.Opacity 
 
 + (Scale_youtube) https://www.youtube.com/watch?v=SfBkBBM4U8U 
 
