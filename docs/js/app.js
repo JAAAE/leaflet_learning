@@ -1,11 +1,11 @@
 
 //正射影像
-const m_color = new L.tileLayer("https://wmts.nlsc.gov.tw/wmts/PHOTO2/default/GoogleMapsCompatible/{z}/{y}/{x}", {
+const Orthophoto = new L.tileLayer("https://wmts.nlsc.gov.tw/wmts/PHOTO2/default/GoogleMapsCompatible/{z}/{y}/{x}", {
     attribution: " <a href='https://maps.nlsc.gov.tw/' target='_blank'>國土測繪中心</a>"
 });
 
 //臺灣通用電子地圖
-const m_mono = new L.tileLayer("https://wmts.nlsc.gov.tw/wmts/EMAP/default/GoogleMapsCompatible/{z}/{y}/{x}", {
+const EMAP = new L.tileLayer("https://wmts.nlsc.gov.tw/wmts/EMAP/default/GoogleMapsCompatible/{z}/{y}/{x}", {
     attribution: "<a href='https://maps.nlsc.gov.tw/' target='_blank'>國土測繪中心</a>"
 });
 
@@ -34,14 +34,14 @@ const map = L.map('map', {
 
 //BaseLayer
 const Map_BaseLayer = {
-    "MIERUNE Color": m_color,
-    "MIERUNE MONO": m_mono
+    "正射影像": Orthophoto,
+    "通用電子地圖": EMAP
 };
 
 //AddLayer
 const Map_AddLayer = {
     "OSM": o_std,
-    "Shadow_20": S_20,
+    "Shadow_20m": S_20,
     "1904台灣堡圖(明治)": JM20K_1904
 };
 
