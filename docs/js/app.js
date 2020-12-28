@@ -82,5 +82,30 @@ L.control.zoom({
     position: 'bottomright'
     }).addTo(map);
 
+// add geojson
 
+axios.get("https://www.geologycloud.tw/api/v1/zh-tw/Fault50?t=.json")
+        .then(function(result) {
+            L.geoJSON(result.data, {
+                onEachFeature: onEachFeature,
+                style: {
+                    weight: 1,
+                    opacity: 1,
+                    color: '#035BB2',
+                    fillColor: '#035BB2',
+                    fillOpacity: 0.5
+                }
+            }).addTo(map)
+        }).catch(function(error) {
+            console.log(error);
+        });
+
+    function onEachFeature(feature, layer) {
+        var pro = feature.properties;
+        var HTML = '';
+        for (var q in pro) {
+            HTML += q + ":" + pro[q] + '<br />';
+        }
+        layer.bindPopup(HTML);
+    }
       
