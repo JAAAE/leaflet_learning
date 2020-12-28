@@ -29,7 +29,7 @@ const map = L.map('map', {
     center: [23.7, 121],
     zoom: 7,
     zoomControl: false, //false -> remove default zoom control
-    layers: [m_mono]
+    layers: [Orthophoto]
 });
 
 //BaseLayer
@@ -83,7 +83,6 @@ L.control.zoom({
     }).addTo(map);
 
 // add geojson
-
 axios.get("https://www.geologycloud.tw/api/v1/zh-tw/Fault50?t=.json")
         .then(function(result) {
             L.geoJSON(result.data, {
