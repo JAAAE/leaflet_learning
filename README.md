@@ -8,6 +8,8 @@
 
 4. zoom control position
 
+5.add geojson
+
 ## Demo
 https://jaaae.github.io/leaflet_studying/
 
@@ -21,3 +23,5 @@ https://jaaae.github.io/leaflet_studying/
 + (leaflet-control-geocoder) https://github.com/perliedman/leaflet-control-geocoder
 
 + (moving zoom control to desire position) https://stackoverflow.com/questions/33614912/how-to-locate-leaflet-zoom-control-in-a-desired-position
+
++ (地質雲_geojson) https://www.geologycloud.tw/geohome/dataService/swagger/api
