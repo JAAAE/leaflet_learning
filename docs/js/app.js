@@ -130,4 +130,4 @@ var plugin = L.control.measure({
     // formatDistance: function (val) {
     //   return Math.round(1000 * val / 1609.344) / 1000 + 'mile';
     // }
-  }).addTo(map)
+  }).addTo(map);
