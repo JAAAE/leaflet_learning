@@ -14,14 +14,14 @@
 https://jaaae.github.io/leaflet_studying/
 
 ## Reference 
-+ <b>Opacity</b>: https://github.com/dayjournal/Leaflet.Control.Opacity 
++ <b>Opacity<b>: https://github.com/dayjournal/Leaflet.Control.Opacity 
 
-+ (Scale_youtube) https://www.youtube.com/watch?v=SfBkBBM4U8U 
++ <b>Scale_youtube<b> https://www.youtube.com/watch?v=SfBkBBM4U8U 
 
-+ (Geocoder_layout design) https://gis.stackexchange.com/questions/325945/search-control-on-leaflet
++ <b>Geocoder_layout design<b> https://gis.stackexchange.com/questions/325945/search-control-on-leaflet
 
-+ (leaflet-control-geocoder) https://github.com/perliedman/leaflet-control-geocoder
++ <b>leaflet-control-geocoder<b> https://github.com/perliedman/leaflet-control-geocoder
 
-+ (moving zoom control to desire position) https://stackoverflow.com/questions/33614912/how-to-locate-leaflet-zoom-control-in-a-desired-position
++ <b>moving zoom control to desire position<b> https://stackoverflow.com/questions/33614912/how-to-locate-leaflet-zoom-control-in-a-desired-position
 
-+ (地質雲_geojson) https://www.geologycloud.tw/geohome/dataService/swagger/api
++ <b>地質雲_geojson<b> https://www.geologycloud.tw/geohome/dataService/swagger/api
