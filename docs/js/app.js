@@ -56,6 +56,7 @@ L.control.layers(
 
 //OpacityControl
 L.control.opacity(
+    Map_BaseLayer,
     Map_AddLayer,
     {
     label: "Layers Opacity"
