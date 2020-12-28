@@ -1,6 +1,6 @@
 ## Leaflet_studying學習內容：
 
-<b>1. leaflet_opacity<b>
+<b> 1. leaflet_opacity<b>
 
 2. <b>leaflet_scale<b>
 
