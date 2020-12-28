@@ -8,7 +8,7 @@
 
 4. zoom control position
 
-5.add geojson
+5. add geojson
 
 ## Demo
 https://jaaae.github.io/leaflet_studying/
