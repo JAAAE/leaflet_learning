@@ -109,7 +109,7 @@ axios.get("https://www.geologycloud.tw/api/v1/zh-tw/Fault50?t=.json")
     }
       
 //  measurement control  button
-var plugin = L.control.measure({
+ L.control.measure({
     //  control position
     position: 'topleft',
     //  weather to use keyboard control for this plugin
