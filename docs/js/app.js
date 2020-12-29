@@ -132,5 +132,5 @@ axios.get("https://www.geologycloud.tw/api/v1/zh-tw/Fault50?t=.json")
     // }
   }).addTo(map);
 
-
+//leaflet-locatecontrol
   L.control.locate().addTo(map);
