@@ -45,10 +45,11 @@ const Map_BaseLayer = {
 
 //AddLayer
 const Map_AddLayer = {
-    "OSM": o_std,
     "Shadow_20m": S_20,
+    "20公尺陰影圖":MOI_HILLSHADE,
     "1904台灣堡圖(明治)": JM20K_1904,
-    "20公尺陰影圖":MOI_HILLSHADE
+    "OSM": o_std
+    
 };
 
 //LayerControl
