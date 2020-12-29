@@ -1,4 +1,4 @@
-## Leaflet_studying學習內容：
+## 內容：
 
 1. Opacity
 
