@@ -131,3 +131,6 @@ axios.get("https://www.geologycloud.tw/api/v1/zh-tw/Fault50?t=.json")
     //   return Math.round(1000 * val / 1609.344) / 1000 + 'mile';
     // }
   }).addTo(map);
+
+
+  L.control.locate().addTo(map);
