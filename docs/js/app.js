@@ -24,6 +24,10 @@ const JM20K_1904 = new L.tileLayer('https://gis.sinica.edu.tw/tileserver/file-ex
     attribution: "<a href='http://gissrv4.sinica.edu.tw/gis/twhgis/' target='_blank'>中央研究院</a>",
 });
 
+//陰影圖
+const MOI_HILLSHADE = new L.tileLayer("https://wmts.nlsc.gov.tw/wmts/MOI_HILLSHADE/default/GoogleMapsCompatible/{z}/{y}/{x}", {
+    attribution: "<a href='https://maps.nlsc.gov.tw/' target='_blank'>國土測繪中心</a>"
+
 //MAP
 const map = L.map('map', {
     center: [23.7, 121],
@@ -42,7 +46,8 @@ const Map_BaseLayer = {
 const Map_AddLayer = {
     "OSM": o_std,
     "Shadow_20m": S_20,
-    "1904台灣堡圖(明治)": JM20K_1904
+    "1904台灣堡圖(明治)": JM20K_1904,
+    "20公尺陰影圖": MOI_HILLSHADE
 };
 
 //LayerControl
