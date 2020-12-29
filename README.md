@@ -12,7 +12,7 @@
 6. Distance measurement control
 
 ## Demo
-https://jaaae.github.io/leaflet_studying/
+https://jaaae.github.io/leaflet_learning/.
 
 ## Reference 
 + Opacity：
