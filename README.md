@@ -9,7 +9,11 @@
 4. Zoom control position
 
 5. Add geojson
+
 6. Distance measurement control
+
+7.leaflet-locatecontrol
+
 
 ## Demo
 https://jaaae.github.io/leaflet_learning/.
@@ -42,3 +46,7 @@ https://jaaae.github.io/leaflet_learning/.
 + leaflet.measure
 
   https://github.com/aprilandjan/leaflet.measure
+
++ leaflet-locatecontrol
+
+  https://github.com/domoritz/leaflet-locatecontrol
