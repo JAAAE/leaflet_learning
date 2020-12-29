@@ -12,7 +12,7 @@
 
 6. Distance measurement control
 
-7.leaflet-locatecontrol
+7. leaflet-locatecontrol
 
 
 ## Demo
