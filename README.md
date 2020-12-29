@@ -9,9 +9,10 @@
 4. Zoom control position
 
 5. Add geojson
+6. Distance measurement control
 
 ## Demo
-https://jaaae.github.io/leaflet_studying/
+https://jaaae.github.io/leaflet_learning/.
 
 ## Reference 
 + Opacity：
@@ -37,3 +38,7 @@ https://jaaae.github.io/leaflet_studying/
 + 地質雲_geojson： 
 
   https://www.geologycloud.tw/geohome/dataService/swagger/api
+
++ leaflet.measure
+
+  https://github.com/aprilandjan/leaflet.measure
