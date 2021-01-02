@@ -115,7 +115,7 @@ axios.get("https://www.geologycloud.tw/api/v1/zh-tw/Fault50?t=.json")
         layer.bindPopup(HTML);
     }
       
-//  measurement control  button
+//  measurement control button
  L.control.measure({
     //  control position
     position: 'topleft',
@@ -141,3 +141,6 @@ axios.get("https://www.geologycloud.tw/api/v1/zh-tw/Fault50?t=.json")
 
 //leaflet-locatecontrol
   L.control.locate().addTo(map);
+
+// Fullscreen
+  map.addControl(new L.Control.Fullscreen());
