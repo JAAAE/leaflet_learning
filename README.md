@@ -12,9 +12,9 @@
 
 6. Distance measurement control
 
-7. locatecontrol
+7. Locatecontrol
 
-8. fullscreen
+8. Fullscreen
 
 
 ## Demo
