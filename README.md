@@ -12,7 +12,9 @@
 
 6. Distance measurement control
 
-7. leaflet-locatecontrol
+7. locatecontrol
+
+8. fullscreen
 
 
 ## Demo
@@ -36,3 +38,5 @@ https://jaaae.github.io/leaflet_learning/.
 + [leaflet.measure](https://github.com/aprilandjan/leaflet.measure)
 
 + [leaflet-locatecontrol](https://github.com/domoritz/leaflet-locatecontrol)
+
++ [Leaflet.fullscreen](https://github.com/Leaflet/Leaflet.fullscreen)
