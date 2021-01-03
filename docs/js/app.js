@@ -150,3 +150,11 @@ axios.get("https://www.geologycloud.tw/api/v1/zh-tw/Fault50?t=.json")
 
 // Fullscreen
 map.addControl(new L.Control.Fullscreen());
+
+// print
+L.easyPrint({
+	title: 'My awesome print button',
+	position: 'bottomright',
+    sizeModes: ['A4Portrait', 'A4Landscape'],
+    filename:'Mymap'
+}).addTo(map);
