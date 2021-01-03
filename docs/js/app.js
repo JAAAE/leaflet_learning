@@ -29,6 +29,10 @@ const MOI_HILLSHADE = new L.tileLayer("https://wmts.nlsc.gov.tw/wmts/MOI_HILLSHA
     attribution: "<a href='https://maps.nlsc.gov.tw/' target='_blank'>國土測繪中心</a>",
 });
 
+//五萬分之一地質圖
+const Geology_50000 = new L.tileLayer("https://landslide.geologycloud.tw/jlwmts/jetlink/gm50000/GoogleMapsCompatible/{z}/{x}/{y}", {
+    attribution: "<a href='https://landslide.geologycloud.tw/swagger/api-docs/api' target='_blank'>山崩雲</a>",
+});
 //MAP
 const map = L.map('map', {
     center: [23.7, 121],
@@ -48,7 +52,8 @@ const Map_AddLayer = {
     "Shadow_20m": S_20,
     "20公尺陰影圖":MOI_HILLSHADE,
     "1904台灣堡圖(明治)": JM20K_1904,
-    "OSM": o_std
+    "OSM": o_std,
+    "五萬分之一地質圖":Geology_50000
     
 };
 
