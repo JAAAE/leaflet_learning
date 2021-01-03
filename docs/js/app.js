@@ -65,7 +65,7 @@ L.control.layers(
 L.control.opacity(
     Map_AddLayer,
     {
-    label: "Layers Opacity",
+    label: "Opacity",
     collapsed: true
     }
 ).addTo(map);
