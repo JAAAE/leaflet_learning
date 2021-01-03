@@ -154,7 +154,7 @@ map.addControl(new L.Control.Fullscreen());
 // print
 L.easyPrint({
 	title: 'My awesome print button',
-	position: 'bottomright',
+	position: 'topleft',
     sizeModes: ['A4Portrait', 'A4Landscape'],
     filename:'Mymap'
 }).addTo(map);
