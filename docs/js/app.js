@@ -151,10 +151,10 @@ axios.get("https://www.geologycloud.tw/api/v1/zh-tw/Fault50?t=.json")
 // Fullscreen
 map.addControl(new L.Control.Fullscreen());
 
-var miniMap = new L.Control.GlobeMiniMap({
+ miniMap  (new L.Control.GlobeMiniMap({
     //uncomment to assign colors
     // land:'#FFFF00',
     // water:'#3333FF',
     // marker:'#000000'
-  }).addTo(map);
+  }).addTo(map));
 
