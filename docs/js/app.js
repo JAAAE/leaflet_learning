@@ -168,16 +168,16 @@ axios.get("https://www.geologycloud.tw/api/v1/zh-tw/Fault50?t=.json")
     // }
   }).addTo(map);
 
-//leaflet-locatecontrol
+//leaflet-locate control
   L.control.locate().addTo(map);
 
 // Fullscreen
 map.addControl(new L.Control.Fullscreen());
 
-// The tree containing the layers
+// Control.Layers.Tree baselayer
 const baseTree = [
     {
-        label: '底圖',
+        label: '底圖(測試中)',
         children: [
             {label: '正射影像', layer: Orthophoto},
             {label: '正射影像_混合', layer: MOI_HILLSHADE},
@@ -189,9 +189,9 @@ const baseTree = [
     
 ];
 
-
+// Control.Layers.Tree overlayer
 const overlaysTree = {
-    label: '疊圖',
+    label: '疊圖(測試中)',
     children: [
         {label: '<div id="onlysel">-Show only selected-</div>'},
         {label: '人', children: [
@@ -261,7 +261,7 @@ const overlaysTree = {
 
 
 
-
+// Control.Layers.Tree layer control
 L.control.layers.tree(baseTree, overlaysTree).addTo(map);
 
 
