@@ -59,7 +59,7 @@ const Map_AddLayer = {
     "1904台灣堡圖(明治)": JM20K_1904,
     "OSM": o_std,
     "五萬分之一地質圖":Geology_50000,
-    "soil":土壤圖
+    "土壤圖":soil
     
 };
 
