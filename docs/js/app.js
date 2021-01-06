@@ -177,7 +177,7 @@ map.addControl(new L.Control.Fullscreen());
 // Control.Layers.Tree baselayer
 const baseTree = [
     {   
-        label: '底圖(測試中)',
+        label: '<div style="background-color:powderblue;">This is a heading</div>',
         children: [
             {label: '正射影像', layer: Orthophoto},
             {label: '正射影像_混合', layer: MOI_HILLSHADE},
