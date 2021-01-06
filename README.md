@@ -2,19 +2,23 @@
 
 1. Opacity
 
-2. Scale
+2. Control.Layers.Tree
 
-3. Geocoding
+3. Scale
 
-4. Zoom control position
+4. Geocoding
 
-5. Add geojson
+5. Zoom control position
 
-6. Distance measurement control
+6. Add geojson
 
-7. Locatecontrol
+7. Distance measurement control
 
-8. Fullscreen
+8. Locatecontrol
+
+9. Fullscreen
+
+
 
 
 ## Demo
@@ -22,6 +26,8 @@ https://jaaae.github.io/leaflet_learning/.
 
 ## Reference 
 + [Opacity](https://github.com/dayjournal/Leaflet.Control.Opacity )
+
++ [Control.Layers.Tree](https://github.com/jjimenezshaw/Leaflet.Control.Layers.Tree)
 
 + [Scale](https://www.youtube.com/watch?v=SfBkBBM4U8U )
 
