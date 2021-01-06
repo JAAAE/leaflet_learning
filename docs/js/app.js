@@ -174,4 +174,22 @@ axios.get("https://www.geologycloud.tw/api/v1/zh-tw/Fault50?t=.json")
 // Fullscreen
 map.addControl(new L.Control.Fullscreen());
 
-
+// The tree containing the layers
+var baseTree = [
+    {
+        label: '0',
+        children: [
+            {label: '1', layer: S_20},
+            {label: '2', layer: MOI_HILLSHADE},
+            
+        ]
+    },
+    {
+        label: '1',
+        children: [
+            {label: '1', layer: JM20K_1904},
+            {label: '2', layer: Geology_50000},
+        ]
+    },
+];
+L.control.layers.tree(baseTree).addTo(map);
