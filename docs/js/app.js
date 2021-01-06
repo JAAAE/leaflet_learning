@@ -177,19 +177,107 @@ map.addControl(new L.Control.Fullscreen());
 // The tree containing the layers
 var baseTree = [
     {
-        label: '0',
+        label: '底圖',
         children: [
-            {label: '1', layer: S_20},
-            {label: '2', layer: MOI_HILLSHADE},
-            
+            {label: '正射影像', layer: Orthophoto},
+            {label: '正射影像_混合', layer: MOI_HILLSHADE},
+            {label: '通用電子地圖', layer: EMAP},
+            {label: 'OSM', layer: o_std},
+
         ]
     },
-    {
-        label: '1',
-        children: [
-            {label: '1', layer: JM20K_1904},
-            {label: '2', layer: Geology_50000},
-        ]
-    },
+    
 ];
-L.control.layers.tree(baseTree).addTo(map);
+
+
+var overlaysTree = {
+    label: '疊圖',
+    selectAllCheckbox: 'Un/select all',
+    children: [
+        {label: '<div id="onlysel">-Show only selected-</div>'},
+        {label: '人', children: [
+            {label: 'Lyon', layer: L.marker([45.728, 4.945])},
+            {label: 'Paris', layer: L.marker([48.725, 2.359])},
+            {label: 'Toulouse', layer: L.marker([43.629, 1.364])},
+        ]},
+        {label: '經', children: [
+            {label: 'Berlin', layer: L.marker([52.559, 13.287])},
+            {label: 'Cologne', layer: L.marker([50.866, 7.143])},
+            {label: 'Hamburg', layer: L.marker([53.630, 9.988])},
+            {label: 'Munich', layer: L.marker([48.354, 11.786])},
+        ]},
+        {label: '交',children: [
+            {label: 'Berlin', layer: L.marker([52.559, 13.287])},
+            {label: 'Cologne', layer: L.marker([50.866, 7.143])},
+            {label: 'Hamburg', layer: L.marker([53.630, 9.988])},
+            {label: 'Munich', layer: L.marker([48.354, 11.786])},
+        ]},
+        {label: '聚',children: [
+            {label: '1904台灣堡圖(明治)', layer: JM20K_1904},
+            {label: 'Cologne', layer: L.marker([50.866, 7.143])},
+            {label: 'Hamburg', layer: L.marker([53.630, 9.988])},
+            {label: 'Munich', layer: L.marker([48.354, 11.786])},
+        ]},        
+        {label: '政',[
+            {label: 'Berlin', layer: L.marker([52.559, 13.287])},
+            {label: 'Cologne', layer: L.marker([50.866, 7.143])},
+            {label: 'Hamburg', layer: L.marker([53.630, 9.988])},
+            {label: 'Munich', layer: L.marker([48.354, 11.786])},
+        ]},
+        {label: '形質',[
+            {label: 'Shadow_20m', layer: S_20},
+            {label: '20公尺陰影圖', layer: MOI_HILLSHADE},
+            {label: '五萬分之一地質圖', layer: Geology_50000},
+            {label: '山崩地滑敏感區', layer: SensitiveArea},
+            {label: '順向坡', layer: Dislope},
+        ]},
+        {label: '候',[
+            {label: 'Berlin', layer: L.marker([52.559, 13.287])},
+            {label: 'Cologne', layer: L.marker([50.866, 7.143])},
+            {label: 'Hamburg', layer: L.marker([53.630, 9.988])},
+            {label: 'Munich', layer: L.marker([48.354, 11.786])},
+        ]},
+        {label: '水',[
+            {label: 'Berlin', layer: L.marker([52.559, 13.287])},
+            {label: 'Cologne', layer: L.marker([50.866, 7.143])},
+            {label: 'Hamburg', layer: L.marker([53.630, 9.988])},
+            {label: 'Munich', layer: L.marker([48.354, 11.786])},
+        ]},
+        {label: '土',[
+            {label: 'Berlin', layer: L.marker([52.559, 13.287])},
+            {label: 'Cologne', layer: L.marker([50.866, 7.143])},
+            {label: 'Hamburg', layer: L.marker([53.630, 9.988])},
+            {label: 'Munich', layer: L.marker([48.354, 11.786])},
+        ]},
+        {label: '生',[
+            {label: 'Berlin', layer: L.marker([52.559, 13.287])},
+            {label: 'Cologne', layer: L.marker([50.866, 7.143])},
+            {label: 'Hamburg', layer: L.marker([53.630, 9.988])},
+            {label: 'Munich', layer: L.marker([48.354, 11.786])},
+        ]},
+            
+        
+    ]
+}
+
+
+
+
+L.control.layers.tree(baseTree, overlaysTree,
+    {
+        namedToggle: true,
+        selectorBack: false,
+        closedSymbol: '&#8862; &#x1f5c0;',
+        openedSymbol: '&#8863; &#x1f5c1;',
+        collapseAll: 'Collapse all',
+        expandAll: 'Expand all',
+        collapsed: false,
+    });
+
+lay.addTo(map).collapseTree().expandSelected().collapseTree(true);
+L.DomEvent.on(L.DomUtil.get('onlysel'), 'click', function() {
+    lay.collapseTree(true).expandSelected(true);
+});
+
+
+
