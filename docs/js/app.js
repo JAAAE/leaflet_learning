@@ -36,7 +36,12 @@ const Geology_50000 = new L.tileLayer("https://landslide.geologycloud.tw/jlwmts/
 
 //山崩地滑敏感區
 const SensitiveArea = new L.tileLayer("https://landslide.geologycloud.tw/jlwmts/jetlink/SensitiveArea/GoogleMapsCompatible/{z}/{x}/{y}.png", {
-    attribution: "<a href='https://tssurgo.tari.gov.tw/Tssurgo/' target='_blank'>山崩雲</a>",
+    attribution: "<a href='https://landslide.geologycloud.tw/swagger/api-docs/api' target='_blank'>山崩雲</a>",
+});
+
+//順向坡
+const Dislope = new L.tileLayer("https://landslide.geologycloud.tw/jlwmts/jetlink/Dislope/GoogleMapsCompatible/{z}/{x}/{y}.png", {
+    attribution: "<a href='https://landslide.geologycloud.tw/swagger/api-docs/api' target='_blank'>山崩雲</a>"
 });
 //MAP
 const map = L.map('map', {
@@ -59,7 +64,8 @@ const Map_AddLayer = {
     "1904台灣堡圖(明治)": JM20K_1904,
     "OSM": o_std,
     "五萬分之一地質圖":Geology_50000,
-    "山崩地滑敏感區":SensitiveArea
+    "山崩地滑敏感區":SensitiveArea,
+    "順向坡":Dislope
     
 };
 
