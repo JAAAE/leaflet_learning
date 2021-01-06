@@ -263,6 +263,7 @@ const overlaysTree = {
 
 // Control.Layers.Tree layer control
 L.control.layers.tree(baseTree, overlaysTree,{
+    collapsed: true,
     label:"TEST"
     }).addTo(map);
 
