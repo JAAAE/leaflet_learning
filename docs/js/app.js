@@ -192,7 +192,6 @@ const baseTree = [
 
 const overlaysTree = {
     label: '疊圖',
-    selectAllCheckbox: 'Un/select all',
     children: [
         {label: '<div id="onlysel">-Show only selected-</div>'},
         {label: '人', children: [
@@ -218,38 +217,38 @@ const overlaysTree = {
             {label: 'Hamburg', layer: L.marker([53.630, 9.988])},
             {label: 'Munich', layer: L.marker([48.354, 11.786])},
         ]},        
-        {label: '政',[
+        {label: '政',children:[
             {label: 'Berlin', layer: L.marker([52.559, 13.287])},
             {label: 'Cologne', layer: L.marker([50.866, 7.143])},
             {label: 'Hamburg', layer: L.marker([53.630, 9.988])},
             {label: 'Munich', layer: L.marker([48.354, 11.786])},
         ]},
-        {label: '形質',[
+        {label: '形質',children:[
             {label: 'Shadow_20m', layer: S_20},
             {label: '20公尺陰影圖', layer: MOI_HILLSHADE},
             {label: '五萬分之一地質圖', layer: Geology_50000},
             {label: '山崩地滑敏感區', layer: SensitiveArea},
             {label: '順向坡', layer: Dislope},
         ]},
-        {label: '候',[
+        {label: '候',children:[
             {label: 'Berlin', layer: L.marker([52.559, 13.287])},
             {label: 'Cologne', layer: L.marker([50.866, 7.143])},
             {label: 'Hamburg', layer: L.marker([53.630, 9.988])},
             {label: 'Munich', layer: L.marker([48.354, 11.786])},
         ]},
-        {label: '水',[
+        {label: '水',children:[
             {label: 'Berlin', layer: L.marker([52.559, 13.287])},
             {label: 'Cologne', layer: L.marker([50.866, 7.143])},
             {label: 'Hamburg', layer: L.marker([53.630, 9.988])},
             {label: 'Munich', layer: L.marker([48.354, 11.786])},
         ]},
-        {label: '土',[
+        {label: '土',children:[
             {label: 'Berlin', layer: L.marker([52.559, 13.287])},
             {label: 'Cologne', layer: L.marker([50.866, 7.143])},
             {label: 'Hamburg', layer: L.marker([53.630, 9.988])},
             {label: 'Munich', layer: L.marker([48.354, 11.786])},
         ]},
-        {label: '生',[
+        {label: '生',children:[
             {label: 'Berlin', layer: L.marker([52.559, 13.287])},
             {label: 'Cologne', layer: L.marker([50.866, 7.143])},
             {label: 'Hamburg', layer: L.marker([53.630, 9.988])},
