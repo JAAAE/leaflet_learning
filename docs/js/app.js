@@ -35,7 +35,7 @@ const Geology_50000 = new L.tileLayer("https://landslide.geologycloud.tw/jlwmts/
 });
 
 //土壤圖
-const soil = new L.tileLayer("https://farmcloud.tari.gov.tw/Soil_map/SimpleWMTS.aspx?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=Soil_map&styles=default&tileMatrixSet=Soil_map.cfg&TILEMATRIX=z&TILEROW=y&TILECOL=x&FORMAT=image/png", {
+const soil = new L.tileLayer("https://farmcloud.tari.gov.tw/Soil_map/SimpleWMTS.aspx?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=Soil_map&styles=default&tileMatrixSet=Soil_map.cfg&TILEMATRIX=577792&TILEROW=442&TILECOL=855&FORMAT=image/png", {
     attribution: "<a href='https://tssurgo.tari.gov.tw/Tssurgo/' target='_blank'>土壤資料供應查詢平台</a>",
 });
 //MAP
