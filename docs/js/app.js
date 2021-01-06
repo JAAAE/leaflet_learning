@@ -177,7 +177,7 @@ map.addControl(new L.Control.Fullscreen());
 // Control.Layers.Tree baselayer
 const baseTree = [
     {   
-        label: '<div style="background-color:powderblue;">This is a heading</div>',
+        label: '<div style="#FF0000	;">底圖(測試中)</div>',
         children: [
             {label: '正射影像', layer: Orthophoto},
             {label: '正射影像_混合', layer: MOI_HILLSHADE},
@@ -191,7 +191,7 @@ const baseTree = [
 
 // Control.Layers.Tree overlayer
 const overlaysTree = {
-    label: '疊圖(測試中)',
+    label: '<div style="#FF0000	;">疊圖(測試中)</div>',
     children: [
         {label: '<div id="onlysel">-Show only selected-</div>'},
         {label: '人', children: [
