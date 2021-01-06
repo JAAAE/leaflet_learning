@@ -37,7 +37,7 @@ https://jaaae.github.io/leaflet_learning/.
 
 + [Moving zoom control to desire position](https://stackoverflow.com/questions/33614912/how-to-locate-leaflet-zoom-control-in-a-desired-position)
 
-+ [地質雲_geojson (external geojson)](https://www.geologycloud.tw/geohome/dataService/swagger/api)
++ [地質雲_geojson (external geojson)](https://www.geologycloud.tw/data/zh-tw)
 
 + [Using GeoJSON with Leaflet (local geojson)](https://leafletjs.com/examples/geojson/)
 
