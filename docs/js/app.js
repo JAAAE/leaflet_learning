@@ -176,7 +176,7 @@ map.addControl(new L.Control.Fullscreen());
 
 // Control.Layers.Tree baselayer
 const baseTree = [
-    {
+    {   
         label: '底圖(測試中)',
         children: [
             {label: '正射影像', layer: Orthophoto},
@@ -262,7 +262,9 @@ const overlaysTree = {
 
 
 // Control.Layers.Tree layer control
-L.control.layers.tree(baseTree, overlaysTree).addTo(map);
+L.control.layers.tree(baseTree, overlaysTree,{
+    label:"TEST"
+    }).addTo(map);
 
 
 
