@@ -175,7 +175,7 @@ axios.get("https://www.geologycloud.tw/api/v1/zh-tw/Fault50?t=.json")
 map.addControl(new L.Control.Fullscreen());
 
 // The tree containing the layers
-var baseTree = [
+const baseTree = [
     {
         label: '底圖',
         children: [
