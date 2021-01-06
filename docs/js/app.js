@@ -190,7 +190,7 @@ var baseTree = [
 ];
 
 
-var overlaysTree = {
+const overlaysTree = {
     label: '疊圖',
     selectAllCheckbox: 'Un/select all',
     children: [
