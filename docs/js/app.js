@@ -3,7 +3,10 @@
 const Orthophoto = new L.tileLayer("https://wmts.nlsc.gov.tw/wmts/PHOTO2/default/GoogleMapsCompatible/{z}/{y}/{x}", {
     attribution: " <a href='https://maps.nlsc.gov.tw/' target='_blank'>國土測繪中心</a>"
 });
-
+//正射影像_混合
+const Orthophoto_mix = new L.tileLayer("https://wmts.nlsc.gov.tw/wmts/PHOTO_MIX/default/GoogleMapsCompatible/{z}/{y}/{x}", {
+    attribution: " <a href='https://maps.nlsc.gov.tw/' target='_blank'>國土測繪中心</a>"
+});
 //臺灣通用電子地圖
 const EMAP = new L.tileLayer("https://wmts.nlsc.gov.tw/wmts/EMAP/default/GoogleMapsCompatible/{z}/{y}/{x}", {
     attribution: "<a href='https://maps.nlsc.gov.tw/' target='_blank'>國土測繪中心</a>"
@@ -54,6 +57,7 @@ const map = L.map('map', {
 //BaseLayer
 const Map_BaseLayer = {
     "正射影像": Orthophoto,
+    "正射影像_混合":Orthophoto_mix,
     "通用電子地圖": EMAP
 };
 
