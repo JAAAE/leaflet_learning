@@ -262,7 +262,14 @@ const overlaysTree = {
 
 
 // Control.Layers.Tree layer control
-L.control.layers.tree(baseTree, overlaysTree).addTo(map);
+L.control.layers.tree(baseTree, overlaysTree,
+    {namedToggle: true,
+    selectorBack: false,
+    closedSymbol: '&#8862; &#x1f5c0;',
+    openedSymbol: '&#8863; &#x1f5c1;',
+    collapseAll: 'Collapse all',
+    expandAll: 'Expand all',
+    collapsed: false,}).addTo(map);
 
 
 
