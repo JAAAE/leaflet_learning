@@ -269,7 +269,7 @@ L.control.layers.tree(baseTree, overlaysTree,
     openedSymbol: '&#8863; &#x1f5c1;',
     collapseAll: 'Collapse all',
     expandAll: 'Expand all',
-    collapsed: false,}).addTo(map);
+    collapsed: true,}).addTo(map);
 
 
 
