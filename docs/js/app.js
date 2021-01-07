@@ -263,7 +263,7 @@ const overlaysTree = {
 
 // Control.Layers.Tree layer control
 L.control.layers.tree(baseTree, overlaysTree,
-    {namedToggle: true,
+    {namedToggle: false,
     selectorBack: false,
     closedSymbol: '&#8862; &#x1f5c0;',
     openedSymbol: '&#8863; &#x1f5c1;',
