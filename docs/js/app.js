@@ -23,6 +23,21 @@ const o_std = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.pn
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 });
 
+//縣市界
+const CITY = new L.tileLayer("https://wmts.nlsc.gov.tw/wmts/CITY/default/GoogleMapsCompatible/{z}/{y}/{x}", {
+    attribution: "<a href='https://maps.nlsc.gov.tw/' target='_blank'>國土測繪中心</a>"
+});
+
+//鄉鎮區界
+const TOWN = new L.tileLayer("https://wmts.nlsc.gov.tw/wmts/TOWN/default/GoogleMapsCompatible/{z}/{y}/{x}", {
+    attribution: "<a href='https://maps.nlsc.gov.tw/' target='_blank'>國土測繪中心</a>"
+});
+
+//村里界(108年10月)
+const Village201910 = new L.tileLayer("https://wmts.nlsc.gov.tw/wmts/Village201910/default/GoogleMapsCompatible/{z}/{y}/{x}", {
+    attribution: "<a href='https://maps.nlsc.gov.tw/' target='_blank'>國土測繪中心</a>"
+});
+
 //Shadw20 
 const S_20 = new L.tileLayer('https://landslide.geologycloud.tw/jlwmts/jetlink/Shadw20/GoogleMapsCompatible/{z}/{x}/{y}', {
     attribution: "<a href='https://landslide.geologycloud.tw/swagger/api-docs/api' target='_blank'>山崩雲</a>",
@@ -76,7 +91,10 @@ const Map_AddLayer = {
     "OSM": o_std,
     "五萬分之一地質圖":Geology_50000,
     "山崩地滑敏感區":SensitiveArea,
-    "順向坡":Dislope
+    "順向坡":Dislope,
+    "村里界（108年10月）":Village201910,
+    "縣市界":CITY,
+    "鄉鎮區界":TOWN
     
 };
 
@@ -218,9 +236,9 @@ const overlaysTree = {
             {label: 'Munich', layer: L.marker([48.354, 11.786])},
         ]},        
         {label: '政',children:[
-            {label: 'Berlin', layer: L.marker([52.559, 13.287])},
-            {label: 'Cologne', layer: L.marker([50.866, 7.143])},
-            {label: 'Hamburg', layer: L.marker([53.630, 9.988])},
+            {label: '縣市界', layer: CITY},
+            {label: '鄉鎮區界', layer: TOWN},
+            {label: '村里界（108年10月)', layer: Village201910},
             {label: 'Munich', layer: L.marker([48.354, 11.786])},
         ]},
         {label: '形質',children:[
