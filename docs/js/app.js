@@ -283,8 +283,6 @@ const overlaysTree = {
 L.control.layers.tree(baseTree, overlaysTree,
     {namedToggle: false,
     selectorBack: false,
-    closedSymbol: '&#8862; &#x1f5c0;',
-    openedSymbol: '&#8863; &#x1f5c1;',
     collapseAll: 'Collapse all',
     expandAll: 'Expand all',
     collapsed: true,}).addTo(map);
