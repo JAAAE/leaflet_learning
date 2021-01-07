@@ -18,11 +18,6 @@ const EMAP = new L.tileLayer("https://wmts.nlsc.gov.tw/wmts/EMAP/default/GoogleM
     attribution: "<a href='https://maps.nlsc.gov.tw/' target='_blank'>國土測繪中心</a>"
 });
 
-const Soil_map = new L.tileLayer("http://117.56.11.184/Soil_map/SimpleWMTS.aspx/Soil_map/default/TSSURGO/Soil_map.cfg/{z}/{y}/{x}", {
-    layers: 'Soil_map',
-    attribution: "<a href='https://maps.nlsc.gov.tw/' target='_blank'>國土測繪中心</a>"
-});
-
 
 //OSM
 const o_std = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -100,8 +95,7 @@ const Map_AddLayer = {
     "順向坡":Dislope,
     "縣市界":CITY,
     "鄉鎮區界":TOWN,
-    "村里界（108年10月）":Village201910,
-    "123":Soil_map
+    "村里界（108年10月）":Village201910
     
 };
 
