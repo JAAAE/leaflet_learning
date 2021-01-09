@@ -103,6 +103,7 @@ const Map_AddLayer = {
 L.control.layers(
     Map_BaseLayer,
     Map_AddLayer,
+    baseTree,
     {
     collapsed: true
     }
@@ -212,7 +213,6 @@ const baseTree = [
 const overlaysTree = {
     label: '<div style="color: #FF0000;">疊圖(測試中)</div>',
     children: [
-        {label: '<div id="onlysel">-Show only selected-</div>'},
         {label: '人', children: [
             {label: 'Lyon', layer: L.marker([45.728, 4.945])},
             {label: 'Paris', layer: L.marker([48.725, 2.359])},
