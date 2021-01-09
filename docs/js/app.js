@@ -113,7 +113,7 @@ L.control.layers(
 
 //OpacityControl
 L.control.opacity(
-    AddLayer,
+    Map_AddLayer,
     {
     label: "Layers"+ "</br>"+"Opacity",
     collapsed: true
