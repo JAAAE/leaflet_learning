@@ -246,7 +246,7 @@ const overlaysTree = {
             {label: '村里界（108年10月)', layer: Village201910},
             {label: 'Munich', layer: L.marker([48.354, 11.786])},
         ]},
-        {label: '形質',children:[
+        {label: '形',children:[
             {label: 'Shadow_20m', layer: S_20},
             {label: '20公尺陰影圖', layer: MOI_HILLSHADE},
             {label: '五萬分之一地質圖', layer: Geology_50000},
