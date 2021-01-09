@@ -196,6 +196,8 @@ axios.get("https://www.geologycloud.tw/api/v1/zh-tw/Fault50?t=.json")
 // Fullscreen
 map.addControl(new L.Control.Fullscreen());
 
+L.Control.Compass().addTo(map);
+
 // Control.Layers.Tree baselayer
 const baseTree = [
     {   
