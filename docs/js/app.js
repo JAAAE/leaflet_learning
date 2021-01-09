@@ -77,94 +77,6 @@ const map = L.map('map', {
 });
 
 
-
-
-
-//OpacityControl
-L.control.opacity(
-    overlaysTree,
-    {
-    label: "Layers"+ "</br>"+"Opacity",
-    collapsed: true
-    }
-).addTo(map);
-
-//add Scale
-L.control.scale({
-    metric: true,
-    imperial: false,
-    position: 'bottomleft'
-}).addTo(map);
-
-// add Geocoder
-L.Control.geocoder({
-    position: 'topleft',
-    collapsed: false,
-    placeholder: 'Search...',
-    defaultMarkGeocode: true
-      }).addTo(map);   
-
-// moving zoom control to bottomright
-L.control.zoom({
-    position: 'bottomright'
-    }).addTo(map);
-
-// add geojson
-axios.get("https://www.geologycloud.tw/api/v1/zh-tw/Fault50?t=.json")
-        .then(function(result) {
-            L.geoJSON(result.data, {
-                onEachFeature: onEachFeature,
-                style: {
-                    weight: 1,
-                    opacity: 1,
-                    color: '#035BB2',
-                    fillColor: '#035BB2',
-                    fillOpacity: 0.5
-                }
-            }).addTo(map)
-        }).catch(function(error) {
-            console.log(error);
-        });
-
-    function onEachFeature(feature, layer) {
-        var pro = feature.properties;
-        var HTML = '';
-        for (var q in pro) {
-            HTML += q + ":" + pro[q] + '<br />';
-        }
-        layer.bindPopup(HTML);
-    }
-      
-//  measurement control button
- L.control.measure({
-    //  control position
-    position: 'topleft',
-    //  weather to use keyboard control for this plugin
-    keyboard: true,
-    //  shortcut to activate measure
-    activeKeyCode: 'M'.charCodeAt(0),
-    //  shortcut to cancel measure, defaults to 'Esc'
-    cancelKeyCode: 27,
-    //  line color
-    lineColor: 'red',
-    //  line weight
-    lineWeight: 2,
-    //  line dash
-    lineDashArray: '6, 6',
-    //  line opacity
-    lineOpacity: 1,
-    //  distance formatter
-    // formatDistance: function (val) {
-    //   return Math.round(1000 * val / 1609.344) / 1000 + 'mile';
-    // }
-  }).addTo(map);
-
-//leaflet-locate control
-  L.control.locate().addTo(map);
-
-// Fullscreen
-map.addControl(new L.Control.Fullscreen());
-
 // Control.Layers.Tree baselayer
 const baseTree = [
     {   
@@ -261,4 +173,92 @@ L.control.layers.tree(baseTree, overlaysTree,
 
 
 
+
+
+
+
+//OpacityControl
+L.control.opacity(
+    overlaysTree,
+    {
+    label: "Layers"+ "</br>"+"Opacity",
+    collapsed: true
+    }
+).addTo(map);
+
+//add Scale
+L.control.scale({
+    metric: true,
+    imperial: false,
+    position: 'bottomleft'
+}).addTo(map);
+
+// add Geocoder
+L.Control.geocoder({
+    position: 'topleft',
+    collapsed: false,
+    placeholder: 'Search...',
+    defaultMarkGeocode: true
+      }).addTo(map);   
+
+// moving zoom control to bottomright
+L.control.zoom({
+    position: 'bottomright'
+    }).addTo(map);
+
+// add geojson
+axios.get("https://www.geologycloud.tw/api/v1/zh-tw/Fault50?t=.json")
+        .then(function(result) {
+            L.geoJSON(result.data, {
+                onEachFeature: onEachFeature,
+                style: {
+                    weight: 1,
+                    opacity: 1,
+                    color: '#035BB2',
+                    fillColor: '#035BB2',
+                    fillOpacity: 0.5
+                }
+            }).addTo(map)
+        }).catch(function(error) {
+            console.log(error);
+        });
+
+    function onEachFeature(feature, layer) {
+        var pro = feature.properties;
+        var HTML = '';
+        for (var q in pro) {
+            HTML += q + ":" + pro[q] + '<br />';
+        }
+        layer.bindPopup(HTML);
+    }
+      
+//  measurement control button
+ L.control.measure({
+    //  control position
+    position: 'topleft',
+    //  weather to use keyboard control for this plugin
+    keyboard: true,
+    //  shortcut to activate measure
+    activeKeyCode: 'M'.charCodeAt(0),
+    //  shortcut to cancel measure, defaults to 'Esc'
+    cancelKeyCode: 27,
+    //  line color
+    lineColor: 'red',
+    //  line weight
+    lineWeight: 2,
+    //  line dash
+    lineDashArray: '6, 6',
+    //  line opacity
+    lineOpacity: 1,
+    //  distance formatter
+    // formatDistance: function (val) {
+    //   return Math.round(1000 * val / 1609.344) / 1000 + 'mile';
+    // }
+  }).addTo(map);
+
+//leaflet-locate control
+  L.control.locate().addTo(map);
+
+// Fullscreen
+map.addControl(new L.Control.Fullscreen());
 
