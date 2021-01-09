@@ -76,42 +76,13 @@ const map = L.map('map', {
     layers: [Orthophoto]
 });
 
-//BaseLayer
-const Map_BaseLayer = {
-    "正射影像": Orthophoto,
-    "正射影像_混合":Orthophoto_mix,
-    "Google satellite":googleSat,
-    "通用電子地圖": EMAP
-};
 
-//AddLayer
-const Map_AddLayer = {
-    "Shadow_20m": S_20,
-    "20公尺陰影圖":MOI_HILLSHADE,
-    "1904台灣堡圖(明治)": JM20K_1904,
-    "OSM": o_std,
-    "五萬分之一地質圖":Geology_50000,
-    "山崩地滑敏感區":SensitiveArea,
-    "順向坡":Dislope,
-    "縣市界":CITY,
-    "鄉鎮區界":TOWN,
-    "村里界（108年10月）":Village201910
-    
-};
 
-//LayerControl
-L.control.layers(
-    Map_BaseLayer,
-    Map_AddLayer,
-    baseTree,
-    {
-    collapsed: true
-    }
-).addTo(map);
+
 
 //OpacityControl
 L.control.opacity(
-    Map_AddLayer,
+    overlaysTree,
     {
     label: "Layers"+ "</br>"+"Opacity",
     collapsed: true
