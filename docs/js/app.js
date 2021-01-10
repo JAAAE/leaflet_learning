@@ -286,7 +286,7 @@ const overlaysTree = {
 
 // Control.Layers.Tree layer control
 L.control.layers.tree(baseTree, overlaysTree,
-    {namedToggle: false,
+    {namedToggle: true,
     selectorBack: false,
     collapseAll: 'Collapse all',
     expandAll: 'Expand all',
