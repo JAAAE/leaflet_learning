@@ -191,12 +191,13 @@ axios.get("https://www.geologycloud.tw/api/v1/zh-tw/Fault50?t=.json")
   }).addTo(map);
 
 //leaflet-locate control
-  L.control.locate().addTo(map);
+L.control.locate().addTo(map);
 
 // Fullscreen
 map.addControl(new L.Control.Fullscreen());
 
-
+// compass
+map.addControl( new L.Control.Compass() );
 
 // Control.Layers.Tree baselayer
 const baseTree = [
@@ -293,11 +294,5 @@ L.control.layers.tree(baseTree, overlaysTree,
     collapsed: true,}).addTo(map);
 
 
-L.control.opacity(
-    overlaysTree,
-    {
-    label: "Layers"+ "</br>"+"test",
-    collapsed: true
-    }
-).addTo(map);
+
 
