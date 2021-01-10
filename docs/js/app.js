@@ -293,5 +293,11 @@ L.control.layers.tree(baseTree, overlaysTree,
     collapsed: true,}).addTo(map);
 
 
-
+L.control.opacity(
+    overlaysTree,
+    {
+    label: "Layers"+ "</br>"+"test",
+    collapsed: true
+    }
+).addTo(map);
 
