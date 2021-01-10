@@ -203,7 +203,7 @@ const baseTree = [
     {   
         label: '<div style="color: #FF0000;">底圖(測試中)</div>',
         children: [
-            {label: '正射影像', layer: Orthophoto},
+            {label: '測試中', layer: Orthophoto},
             {label: '正射影像_混合', layer: MOI_HILLSHADE},
             {label: '通用電子地圖', layer: EMAP},
             {label: 'OSM', layer: o_std},
