@@ -10,23 +10,25 @@
 
 ## 內容：
 
-1. Opacity
+- [x] Opacity
 
-2. Control.Layers.Tree
+- [x] Control.Layers.Tree
 
-3. Scale
+- [x] Scale
 
-4. Geocoding
+- [x] Geocoding
 
-5. Zoom control position
+- [x] Zoom control position
 
-6. Add geojson
+- [x] Add geojson
 
-7. Distance measurement control
+- [x] Distance measurement control
 
-8. Locatecontrol
+- [x] Locatecontrol
 
-9. Fullscreen
+- [x] Fullscreen
+
+- [x] leaflet-compass
 
 
 
@@ -56,3 +58,5 @@ https://jaaae.github.io/leaflet_learning/.
 + [leaflet-locatecontrol](https://github.com/domoritz/leaflet-locatecontrol)
 
 + [Leaflet.fullscreen](https://github.com/Leaflet/Leaflet.fullscreen)
+
++ [leaflet-compass](https://github.com/stefanocudini/leaflet-compass)
