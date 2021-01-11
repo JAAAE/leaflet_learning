@@ -10,25 +10,25 @@
 
 ## 內容：
 
-- [ ] Opacity
+- [x] Opacity
 
-2. Control.Layers.Tree
+- [x] Control.Layers.Tree
 
-3. Scale
+- [x] Scale
 
-4. Geocoding
+- [x] Geocoding
 
-5. Zoom control position
+- [x] Zoom control position
 
-6. Add geojson
+- [x] Add geojson
 
-7. Distance measurement control
+- [x]. Distance measurement control
 
-8. Locatecontrol
+- [x] Locatecontrol
 
-9. Fullscreen
+- [x] Fullscreen
 
-10. leaflet-compass
+- [x] leaflet-compass
 
 
 
