@@ -10,7 +10,7 @@
 
 ## 內容：
 
--[] Opacity
+- [ ] Opacity
 
 2. Control.Layers.Tree
 
