@@ -196,6 +196,7 @@ L.control.locate().addTo(map);
 // Fullscreen
 map.addControl(new L.Control.Fullscreen());
 
+map.addControl( new L.Control.Compass() );
 
 // Control.Layers.Tree baselayer
 const baseTree = [
@@ -279,7 +280,7 @@ const overlaysTree = {
             
         
     ]
-}
+};
 
 
 
@@ -291,6 +292,8 @@ L.control.layers.tree(baseTree, overlaysTree,
     expandAll: 'Expand all',
     collapsed: true,}).addTo(map);
 
-    map.addControl( new L.Control.Compass() );
+
+
+    
 
 
