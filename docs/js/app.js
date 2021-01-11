@@ -291,6 +291,6 @@ L.control.layers.tree(baseTree, overlaysTree,
     expandAll: 'Expand all',
     collapsed: true,}).addTo(map);
 
-    map.addControl( new L.Control.Compass(option) );
+    map.addControl( new L.Control.Compass() );
 
 
