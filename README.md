@@ -22,7 +22,7 @@
 
 - [x] Add geojson
 
-- [x]. Distance measurement control
+- [x] Distance measurement control
 
 - [x] Locatecontrol
 
