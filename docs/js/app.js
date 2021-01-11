@@ -70,8 +70,8 @@ const Dislope = new L.tileLayer("https://landslide.geologycloud.tw/jlwmts/jetlin
 });
 //MAP
 const map = L.map('map', {
-    center: [23.7, 121],
-    zoom: 7,
+    center: [25, 121.5],
+    zoom: 10,
     zoomControl: false, //false -> remove default zoom control
     layers: [Orthophoto]
 });
