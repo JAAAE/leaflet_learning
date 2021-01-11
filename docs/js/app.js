@@ -196,7 +196,8 @@ L.control.locate().addTo(map);
 // Fullscreen
 map.addControl(new L.Control.Fullscreen());
 
-map.addControl( new L.Control.Compass() );
+// compass
+map.addControl( new L.Control.Compass({showDigit: true, position: 'topleft'}) );
 
 // Control.Layers.Tree baselayer
 const baseTree = [
