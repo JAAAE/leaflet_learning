@@ -28,6 +28,8 @@
 
 9. Fullscreen
 
+10. leaflet-compass
+
 
 
 
@@ -56,3 +58,5 @@ https://jaaae.github.io/leaflet_learning/.
 + [leaflet-locatecontrol](https://github.com/domoritz/leaflet-locatecontrol)
 
 + [Leaflet.fullscreen](https://github.com/Leaflet/Leaflet.fullscreen)
+
++ [leaflet-compass](https://github.com/stefanocudini/leaflet-compass)
