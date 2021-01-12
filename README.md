@@ -10,7 +10,7 @@
 
 ## 內容：
 
-- [x] Opacity
+- [x] Leaflet.Control.Opacity
 
 - [x] Control.Layers.Tree
 
