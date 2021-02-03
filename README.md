@@ -20,7 +20,7 @@
 
 - [x] Zoom control position
 
-- [x] Add geojson
+- [] Add geojson
 
 - [x] Distance measurement control
 
