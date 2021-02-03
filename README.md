@@ -12,15 +12,11 @@
 
 - [x] Leaflet.Control.Opacity
 
-- [ ] Control.Layers.Tree
-
 - [x] Scale
 
 - [x] Geocoding
 
 - [x] Zoom control position
-
-- [ ] Add geojson
 
 - [x] Distance measurement control
 
@@ -30,7 +26,9 @@
 
 - [x] leaflet-compass
 
+- [ ] Control.Layers.Tree
 
+- [ ] Add geojson
 
 
 ## Demo
