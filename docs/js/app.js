@@ -83,7 +83,7 @@ const Map_BaseLayer = {
     "正射影像_混合":Orthophoto_mix,
     "Google satellite":googleSat,
     "通用電子地圖": EMAP,
-    "OSM": o_std,
+    "OSM": o_std
 };
 
 //AddLayer
