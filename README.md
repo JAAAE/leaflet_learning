@@ -12,7 +12,7 @@
 
 - [x] Leaflet.Control.Opacity
 
-- [x] Control.Layers.Tree
+- [ ] Control.Layers.Tree
 
 - [x] Scale
 
