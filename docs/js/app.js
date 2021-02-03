@@ -88,15 +88,16 @@ const Map_BaseLayer = {
 
 //AddLayer
 const Map_AddLayer = {
-    "Shadow_20m": S_20,
-    "20公尺陰影圖":MOI_HILLSHADE,
-    "1904台灣堡圖(明治)": JM20K_1904,
-    "五萬分之一地質圖":Geology_50000,
-    "山崩地滑敏感區":SensitiveArea,
-    "順向坡":Dislope,
     "縣市界":CITY,
     "鄉鎮區界":TOWN,
-    "村里界（108年10月）":Village201910
+    "村里界（108年10月）":Village201910,
+    "1904台灣堡圖(明治)": JM20K_1904,
+    "Shadow_20m": S_20,
+    "20公尺陰影圖":MOI_HILLSHADE,  
+    "五萬分之一地質圖":Geology_50000,
+    "山崩地滑敏感區":SensitiveArea,
+    "順向坡":Dislope
+    
     
 };
 
