@@ -58,3 +58,5 @@ https://jaaae.github.io/leaflet_learning/.
 + [Leaflet.fullscreen](https://github.com/Leaflet/Leaflet.fullscreen)
 
 + [leaflet-compass](https://github.com/stefanocudini/leaflet-compass)
+
++ [leaflet_layercontrol_scroll](https://jsfiddle.net/DeanoFino/xe3zca7q/)
