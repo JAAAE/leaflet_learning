@@ -13,6 +13,16 @@ const googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={
     subdomains:['mt0','mt1','mt2','mt3']
 });
 
+//1966-Corona衛星影像
+const Taiwan_Corona_1966 = new L.tileLayer('https://gis.sinica.edu.tw/tileserver/file-exists.php?img=Taiwan_Corona_1966-jpg-{z}-{x}-{y}', {
+    attribution: "<a href='http://gissrv4.sinica.edu.tw/gis/twhgis/' target='_blank'>中央研究院</a>",
+});
+
+//1969-Corona衛星影像
+const Taiwan_Corona_1969 = new L.tileLayer('https://gis.sinica.edu.tw/tileserver/file-exists.php?img=Taiwan_Corona_1969-jpg-{z}-{x}-{y}', {
+    attribution: "<a href='http://gissrv4.sinica.edu.tw/gis/twhgis/' target='_blank'>中央研究院</a>",
+});
+
 //臺灣通用電子地圖
 const EMAP = new L.tileLayer("https://wmts.nlsc.gov.tw/wmts/EMAP/default/GoogleMapsCompatible/{z}/{y}/{x}", {
     attribution: "<a href='https://maps.nlsc.gov.tw/' target='_blank'>國土測繪中心</a>"
@@ -43,6 +53,11 @@ const JM20K_1904 = new L.tileLayer('https://gis.sinica.edu.tw/tileserver/file-ex
     attribution: "<a href='http://gissrv4.sinica.edu.tw/gis/twhgis/' target='_blank'>中央研究院</a>",
 });
 
+//1921-日治地形圖-1:25,000
+const JM25K_1921 = new L.tileLayer('https://gis.sinica.edu.tw/tileserver/file-exists.php?img=JM25K_1921-jpg-{z}-{x}-{y}', {
+    attribution: "<a href='http://gissrv4.sinica.edu.tw/gis/twhgis/' target='_blank'>中央研究院</a>",
+});
+
 //Shadw20 
 const S_20 = new L.tileLayer('https://landslide.geologycloud.tw/jlwmts/jetlink/Shadw20/GoogleMapsCompatible/{z}/{x}/{y}', {
     attribution: "<a href='https://landslide.geologycloud.tw/swagger/api-docs/api' target='_blank'>山崩雲</a>",
@@ -61,11 +76,6 @@ const Geology_50000 = new L.tileLayer("https://landslide.geologycloud.tw/jlwmts/
 //山崩地滑敏感區
 const SensitiveArea = new L.tileLayer("https://landslide.geologycloud.tw/jlwmts/jetlink/SensitiveArea/GoogleMapsCompatible/{z}/{x}/{y}.png", {
     attribution: "<a href='https://landslide.geologycloud.tw/swagger/api-docs/api' target='_blank'>山崩雲</a>",
-});
-
-//順向坡
-const Dislope = new L.tileLayer("https://landslide.geologycloud.tw/jlwmts/jetlink/Dislope/GoogleMapsCompatible/{z}/{x}/{y}.png", {
-    attribution: "<a href='https://landslide.geologycloud.tw/swagger/api-docs/api' target='_blank'>山崩雲</a>"
 });
 
 //順向坡
@@ -93,15 +103,18 @@ const Map_BaseLayer = {
 
 //AddLayer
 const Map_AddLayer = {
+    "Shadow_20m": S_20,
+    "20公尺陰影圖":MOI_HILLSHADE,  
+    "1966年Corona衛星影像":Taiwan_Corona_1966,
+    "1969年Corona衛星影像":Taiwan_Corona_1969,
+    "1904台灣堡圖(明治)": JM20K_1904,
+    "1921日治地形圖":JM25K_1921,
+    "五萬分之一地質圖":Geology_50000,
+    "山崩地滑敏感區":SensitiveArea,
+    "順向坡":Dislope,
     "縣市界":CITY,
     "鄉鎮區界":TOWN,
     "村里界（108年10月）":Village201910,
-    "1904台灣堡圖(明治)": JM20K_1904,
-    "Shadow_20m": S_20,
-    "20公尺陰影圖":MOI_HILLSHADE,  
-    "五萬分之一地質圖":Geology_50000,
-    "山崩地滑敏感區":SensitiveArea,
-    "順向坡":Dislope
     
     
 };
