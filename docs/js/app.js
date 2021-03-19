@@ -84,7 +84,7 @@ const Dislope = new L.tileLayer("https://landslide.geologycloud.tw/jlwmts/jetlin
 });
 
 //HOST地圖
-const HOST_20m = new L.tilelayer("https://storage.geodac.tw/Tile/v2/SWCBProject/Taiwan_Rmap_20m/{z}/{y}/{x}.jpg", { 
+const HOST_20m = new L.tilelayer("https://storage.geodac.tw/Tile/v2/SWCBProject/Taiwan_Rmap_20m/{z}/{y}/{x}.png", { 
     attribution: "<a href='https://gis.swcb.gov.tw/' target='_blank'>水保局BigGIS</a>"
 });
 
