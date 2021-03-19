@@ -83,10 +83,7 @@ const Dislope = new L.tileLayer("https://landslide.geologycloud.tw/jlwmts/jetlin
     attribution: "<a href='https://landslide.geologycloud.tw/swagger/api-docs/api' target='_blank'>山崩雲</a>"
 });
 
-//HOST地圖
-const HOST_20m = new L.tilelayer("https://storage.geodac.tw/Tile/v2/SWCBProject/Taiwan_Rmap_20m/{z}/{y}/{x}.png", { 
-    attribution: "<a href='https://gis.swcb.gov.tw/' target='_blank'>水保局BigGIS</a>"
-});
+
 
 //MAP
 const map = L.map('map', {
@@ -110,7 +107,6 @@ const Map_BaseLayer = {
 const Map_AddLayer = {
     "Shadow_20m": S_20,
     "20公尺陰影圖":MOI_HILLSHADE, 
-    "HOST地圖":HOST_20m, 
     "1966年Corona衛星影像":Taiwan_Corona_1966,
     "1969年Corona衛星影像":Taiwan_Corona_1969,
     "1904台灣堡圖(明治)": JM20K_1904,
