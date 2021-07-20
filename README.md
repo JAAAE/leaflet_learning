@@ -35,7 +35,7 @@
 https://jaaae.github.io/leaflet_learning/.
 
 ## Reference 
-+ [Opacity](https://github.com/dayjournal/Leaflet.Control.Opacity )
++ [Leaflet.Control.Opacity](https://github.com/dayjournal/Leaflet.Control.Opacity )
 
 + [Control.Layers.Tree](https://github.com/jjimenezshaw/Leaflet.Control.Layers.Tree)
 
